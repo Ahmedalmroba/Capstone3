@@ -77,7 +77,7 @@ public class ConsultantService {
         return getByCategory;
     }
 
-    //###########6
+    //###########ahmed almroba
     public Consultant getConsultINFOByID(Integer id) {
         Consultant consultant = consultantRepository.findConsultantById(id);
         if (consultant == null) {
@@ -113,7 +113,7 @@ public class ConsultantService {
         }
         return filteredConsultants;
     }
-//###########################
+//########################### ahmed almroba
     public List<Consultant> getTop4ConsultantsByRating() {
         List<Consultant> topConsultants = consultantRepository.findTop4ByOrderByAvgRatingDesc();
         if (topConsultants.isEmpty()) {

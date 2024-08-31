@@ -25,7 +25,7 @@ public class SubscriptionService {
         return subscriptionRepository.findAll();
     }
 
-    //####################12
+    //#################### ahmed ahmroba
     public void addSubscription(SubscriptionDTO subscriptionDTO) {
         User user = userRepository.findUserById(subscriptionDTO.getUser_id());
         if (user == null) {
@@ -63,7 +63,7 @@ public class SubscriptionService {
         subscriptionRepository.delete(sub);
     }
 
-    //    #####################11
+    //    ##################### ahmed almroba
     public List searchSubscription(Integer uid) {
         User user = userRepository.findUserById(uid);
         List howSubscribe = new ArrayList<>();

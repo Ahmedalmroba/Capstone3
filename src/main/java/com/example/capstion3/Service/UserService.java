@@ -70,7 +70,7 @@ public class UserService {
             }
         }
     }
-//    ==============14
+//    ============== ahmed almroba
     public void assignUserToReservation(Integer uid,Integer rId){
         User u = userRepository.findUserById(uid);
         Reservation r=reservationRepository.findReservationById(rId);
@@ -108,7 +108,7 @@ public class UserService {
             }
         }
     }
-//    ########################
+//    ######################## ahmed almroba
     public List getConsultantNotApprovedByAdmin(Integer adminId) {
         List notApproved = new ArrayList();
         User u = userRepository.findUserById(adminId);

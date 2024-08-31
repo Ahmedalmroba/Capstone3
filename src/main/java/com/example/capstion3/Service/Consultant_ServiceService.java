@@ -36,7 +36,7 @@ public class Consultant_ServiceService {
     }
 
 
-    //    ##########3
+    //    ##########
     public void addNewConsultantService(Consultant_Service consultant_Service,Integer cId)  {
         if (consultantRepository.findConsultantById(cId)==null){
             throw new APIException("Consultant is not found");
@@ -73,7 +73,7 @@ public class Consultant_ServiceService {
             consultant_ServiceRepository.deleteById(id);
         }
     }
-//    ###################2
+//    ################### ahmed almroba
     public List getByPriceAndCategoryName(Integer price,String categoryName)  {
         List getAll=new ArrayList<>();
         for (int i=0; i<consultant_ServiceRepository.findAll().size();i++){

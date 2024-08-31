@@ -32,7 +32,7 @@ public class RatingService {
     public List<Rating> getAllRating() {
         return ratingRepository.findAll();
     }
-
+///// ahmed almroba
     public void addRating(Rating rating,Integer consultantId,Integer uId) {
         Consultant consultant=consultantRepository.findConsultantById(consultantId);
         User user=userRepository.findUserById(uId);
@@ -67,7 +67,7 @@ public class RatingService {
         ratingRepository.deleteById(id);
 
     }
-//    ######################################8
+//    ###################################### ahmed almroba
     public List getByRating(Integer rate) {
         List getAll=new ArrayList<>();
         for (Rating rating : ratingRepository.findAll()) {
